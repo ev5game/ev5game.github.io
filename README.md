@@ -26,6 +26,14 @@ The game is running in the blockchain, if you want to learn more of the game, pl
 *  V3：get the unlimited generation reward, 100% of the daily dividend of the first generation, 70% of the daily dividend of the second generation, 50% of the daily dividend of the third generation, 8% of the daily dividend of the fourth generation to the tenth generation, 3% of the daily dividend of the eleven generation to the twenty generation, more than Twenty generation  0.5% of the daily dividend；
 *  V4：get the unlimited generation reward, 120% of the daily dividend of the first generation, 80% of the daily dividend of the second generation, 60% of the daily dividend of the third generation, 10% of the daily dividend of the fourth generation to the tenth generation, 5% of the daily dividend of the eleven generation to the twenty generation, more than Twenty generation  1% of the daily dividend；
 ```
+```Solidity
+*  V4 Plus:With the same dividend and reward mechanism as V4, V4 plus will increase the "Leadership Award" item in order to achieve a static dividend for the superior players.
+* （1）Players push the number of nodes equal to 0 or 1, do not enjoy the bonus;
+* （2）If the number of direct push nodes is equal to 2, the player will get 10% of the static dividend of the first<br> generation of the previous day.
+* （3）If the number of direct push nodes is equal to 3, the player will get 10% of the static dividend of the first generation and 20% of the static dividend of the second generation.
+* （4）If the number of direct push nodes is equal to 4, the player will get 10% of the static dividend of the first generation, 20% of the static dividend of the second generation and 40% of the static dividend of the third generation.
+* （5）If the number of direct push nodes is greater than or equal to 5, the player will get 10% of the static dividend of the first generation, 20% of the static dividend of the second generation, 40% of the static dividend of the third generation and 80% of the static dividend of the fourth generation.
+```
 *  Reward burns: When the amount of his account is less than that of the recommended member, the node reward is calculated on the basis of the amount of his account.
 <br>When the amount of his account is greater than or equal to that of the recommended member, the node reward is calculated on the basis of the amount of the recommended member. 
 <br>In addition, node rewards need to be multiplied by membership grade coefficient, V1 is 20%, V2 is 40%, V3 is 60%，V4 is 50%. 
