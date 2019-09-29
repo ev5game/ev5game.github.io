@@ -267,19 +267,19 @@ function invest() {
                         //invest
                         var investAmount = $(".investAmount").val();
 
-                        if (!(investAmount % 1 === 0 && (investAmount >= 1 && investAmount <= 15))) {
+                        if (!(investAmount % 1 === 0 && (investAmount >= 1 && investAmount <= 30))) {
                             evAlertBox(errorNumMsg[langName]);
                             return;
                         }
                         var errOverMsg = {
-                            'en': "Up to " + (15 - haveInAmount) + "ETH can be invested in this time.",
-                            'zh': "本次最多可入股" + (15 - haveInAmount) + "个ETH",
-                            'jp': "今回は最大" + (15 - haveInAmount) + "つのETHを出資することができます",
-                            'kr': "이번 최대 " + (15 - haveInAmount) + "개 ETH",
-                            'de': "Die maximale Anzahl der Aktien dieses Mal verfügbar" + (15 - haveInAmount) + "Eine ETH"
+                            'en': "Up to " + (30 - haveInAmount) + "ETH can be invested in this time.",
+                            'zh': "本次最多可入股" + (30 - haveInAmount) + "个ETH",
+                            'jp': "今回は最大" + (30 - haveInAmount) + "つのETHを出資することができます",
+                            'kr': "이번 최대 " + (30 - haveInAmount) + "개 ETH",
+                            'de': "Die maximale Anzahl der Aktien dieses Mal verfügbar" + (30 - haveInAmount) + "Eine ETH"
                         };
                         var rr = errOverMsg[langName];
-                        if ((parseInt(haveInAmount) + parseInt(investAmount)) > 15) {
+                        if ((parseInt(haveInAmount) + parseInt(investAmount)) > 30) {
                             evAlertBox(rr);
                             return;
                         }
