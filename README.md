@@ -96,6 +96,8 @@ A recommended B, A shares 5 ETH, B shares 15 ETH, then A gets a daily bonus of (
         return 0;
     }
 ```
+*  According to the amount of players'betting, the time of betting and the number of subordinate players, the node reward and leadership reward are calculated.
+
 ## Invest into Contract's Intelligent judgement 
 ```Solidity
       if(userAddress == address(0)) {
@@ -108,6 +110,8 @@ A recommended B, A shares 5 ETH, B shares 15 ETH, then A gets a daily bonus of (
             db.updateCoinLevel(msg.sender,frozenCoin,0,level,queueLevel,1,0,1,1);
       }
  ``` 
+*  The new betting and additional betting of the same wallet are intelligently judged according to the player's rank, on-the-way situation and the amount of money already invested, and then written into ETH's intelligent contract.
+ 
  ## WithDraw Function
 ```Solidity
     function userWithDrawPro()
@@ -118,8 +122,7 @@ A recommended B, A shares 5 ETH, B shares 15 ETH, then A gets a daily bonus of (
         returns(bool)
     {
         require(!reEntrancyMutex);
-        (,,,,,uint frozenCoin,uint freeCoin,uint lockedCoin,,,,) = db.getUserMapping(msg.sender);
-        require(freeCoin == lockedCoin, "Nothing To");
+        (,,,,,uint frozenCoin,uint freeCoin,,,,,) = db.getUserMapping(msg.sender);
         
         bool success = false;
         uint rltCoin;
