@@ -57,23 +57,23 @@ body{
     height:32px;
 }
 .language_kr{
-    background: url(../img/kr.png) no-repeat;
+    background: url(../image/kr.png) no-repeat;
     background-size: 100% 100%;
 }
 .language_jp{
-    background: url(../img/jp.png) no-repeat;
+    background: url(../image/jp.png) no-repeat;
     background-size: 100% 100%;
 }
 .language_en{
-    background: url(../img/en.png) no-repeat;
+    background: url(../image/en.png) no-repeat;
     background-size: 100% 100%;
 }
 .language_zh{
-    background: url(../img/flag.png) no-repeat;
+    background: url(../image/flag.png) no-repeat;
     background-size: 100% 100%;
 }
 .language_de{
-    background: url(../img/de.png) no-repeat;
+    background: url(../image/de.png) no-repeat;
     background-size: 100% 100%;
 }
 
@@ -99,7 +99,7 @@ body{
     padding-top: 6px;
     width: 80px;
     height: 140px;
-    background:url("../img/langBg.png") no-repeat;
+    background:url("../image/langBg.png") no-repeat;
 }
 
 .option_en, .option_jp, .option_zh, .option_kr, .option_de{
@@ -108,23 +108,23 @@ body{
     height: 32px;
 }
 .option_en{
-    background:url("../img/en.png") round no-repeat;
+    background:url("../image/en.png") round no-repeat;
 }
 .option_jp{
-    background:url("../img/jp.png") round no-repeat;
+    background:url("../image/jp.png") round no-repeat;
 }
 .option_zh{
-    background:url("../img/flag.png") round no-repeat;
+    background:url("../image/flag.png") round no-repeat;
 }
 .option_kr{
-    background:url("../img/kr.png") round no-repeat;
+    background:url("../image/kr.png") round no-repeat;
 }
 .option_de{
-    background:url("../img/de.png") round no-repeat;
+    background:url("../image/de.png") round no-repeat;
 }
 
 .infoPanel{
-    background:url("../img/bg01.png") center no-repeat;
+    background:url("../image/bg01.png") center no-repeat;
     width:338px;
     height: 173px;
     display: block;
@@ -169,7 +169,7 @@ body{
 }
 .copyUrl{
     height:23px;
-    background:url("../img/qrIcon.png") center no-repeat;
+    background:url("../image/qrIcon.png") center no-repeat;
     padding-top:42px;
     font-size:12px;
     font-family:MFYueYuan_Noncommercial-Regular;
@@ -258,7 +258,7 @@ body{
 .starLogo{
     width:60px;
     height:60px;
-    background:url("../img/starLogo.png") center no-repeat;
+    background:url("../image/starLogo.png") center no-repeat;
 }
 .middleWrap{
     padding:16px 0 15px 0;
@@ -314,13 +314,13 @@ body{
     border-right:none;
     border-top-left-radius:18px;
     border-bottom-left-radius:18px;
-    background:url("../img/downIcon.png") center no-repeat;
+    background:url("../image/downIcon.png") center no-repeat;
 }
 .amountWrap .up{
     border-left:none;
     border-top-right-radius:18px;
     border-bottom-right-radius:18px;
-    background:url("../img/upIcon.png") center no-repeat;
+    background:url("../image/upIcon.png") center no-repeat;
 }
 .amountWrap .money{
     border:2px solid rgba(229,229,229,1);
@@ -337,7 +337,7 @@ body{
 .foxIcon{
     width:25px;
     height:23px;
-    background:url("../img/fox.png") center no-repeat;
+    background:url("../image/fox.png") center no-repeat;
     position: relative;
 }
 .foxIcon span{
@@ -526,7 +526,7 @@ body{
 .littlePanel .panelNum{
     height:30px;
     width:100%;
-    background:url("../img/coin.png") left center no-repeat;
+    background:url("../image/coin.png") left center no-repeat;
     text-align:right;
     font-size: 18px;
     /*font-family:MFYueYuan_Noncommercial-Regular;*/
@@ -745,7 +745,7 @@ p.mask_content, p.mask_content4 {
     height: 220px;
 }
 .closeMask {
-    background: url(../img/closeIcon.png) round no-repeat;
+    background: url(../image/closeIcon.png) round no-repeat;
     position: absolute;
     right: 10px;
     top: 10px;
