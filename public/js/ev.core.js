@@ -3,8 +3,6 @@ var address;
 //contract
 var contract = null;
 var contract_address = "";
-var contract1 = null;
-var contract_address1 = "";
 //web3 setting
 var isWeb3 = false;
 var isWebLogin = false;
@@ -59,7 +57,6 @@ function getChangeByAccount() {
 window.addEventListener('load', function () {
     pageLoading();
     contract_address = "0x6e452121B2cEcb231ab95756f2bb034D8D07F5c2";
-    contract_address1 = "0x3eF7805032f12EAB07c96Feb42bEB61618943247";
     //console.info(contract_address);
     pCode = UrlParm.parm("r");
     defalutCode = 'Q7T8WG';
@@ -184,16 +181,6 @@ function getUserInfo(userAddress) {
             $(".earnedCount").html(earnedCount + "<small> E</small>");
             $(".rewardCount").html(rewardCount + "<small> E</small>");
             $(".waitToSend").html(waitToSend + "<small> E</small>");
-        }
-    });
-    contract1.updateMapping(userAddress, function (error, result) {
-        if (!error) {
-            result = replaceValue(result);
-            console.info(result);
-            $(".toReplay").css('display', 'none').attr("disabled", "disabled");
-            if(result[0] == 0){
-                $(".upgrade").css('display', 'block').removeAttr("disabled");
-            }
         }
     });
 }

@@ -220,21 +220,6 @@ var infoFinishMsg ={
     'de': 'Erfolgreiche Wetten'
 };
 
-var yUpdateMsg = {
-    'en': 'Successful',
-    'zh': '升级成功,^_^',
-    'jp': 'Successful',
-    'kr': 'Successful',
-    'de': 'Successful'
-};
-var nUpdateMsg = {
-    'en': 'failure',
-    'zh': '升级失败!',
-    'jp': 'failure',
-    'kr': 'failure',
-    'de': 'failure'
-};
-
 function languages(type) {
     var list = document.getElementsByClassName("list");
     var listContent = $(".detailPanel").children().find("li");

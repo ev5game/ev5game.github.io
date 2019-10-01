@@ -47,18 +47,17 @@ function isTestNetwork(web3) {
                 ethDesc = "unknown net";
         }
         $(".cur_network").html(ethDesc);
-        /*if(netId!=1){
+        if(netId!=1){
            $(".web3-required").show();
            $(".changeMainNet").show();
            $(".toInvest").hide();
-        }*/
+        }
     });
 }
 
 //init contract
 function initContract(web3) {
     var abi = newAbi;
-    var abi1 = newAbi_1;
     if (typeof web3 !== 'undefined') {
         web3 = new Web3(web3.currentProvider);
     } else {
@@ -66,7 +65,6 @@ function initContract(web3) {
         web3 = new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/v3/4840b05b104d4a708b7b161ba909f40b"));
     }
     contract = web3.eth.contract(abi).at(contract_address);
-    contract1 = web3.eth.contract(abi1).at(contract_address1);
 }
 
 //change to Eth unit
@@ -225,16 +223,4 @@ $('.fixedAmount').on('click', 'li', function () {
 
 $('.closeMask').click(function () {
     this.parentNode.parentNode.style.display = 'none';
-});
-
-$(".upgrade").click(function () {
-        contract1.upgrade(address,function (error, result) {
-            if (!error) {
-                console.info(result);
-                evAlertBox(yUpdateMsg[langName]);
-                $(".upgrade").css('display', 'none').attr("disabled", "disabled");
-            } else {
-                evAlertBox(nUpdateMsg[langName]);
-            }
-        });
 });
