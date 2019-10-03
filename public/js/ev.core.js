@@ -147,7 +147,11 @@ function getUserInfo(userAddress) {
             result = replaceValue(result);
             console.info(result);
             code = result[1];
-            pCode = result[2];
+            _pCode = result[2];
+            if (typeof _pCode != 'undefined' && _pCode != "" && _pCode != null) {
+                pCode = _pCode
+            }
+            //
             setInvitors(pCode,defalutCode,code);
 
             level = result[3];
