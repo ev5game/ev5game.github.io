@@ -15,7 +15,7 @@ The game is running in the blockchain, if you want to learn more of the game, pl
 *  Income from equity
 ```Solidity
 *  daily dividend of V1 is 0.5%
-*  daily dividend of V2 is 0.7%
+*  daily dividend of V2 is 0.6%
 *  daily dividend of V3 is 1%
 *  daily dividend of V4 is 1%
 ```
